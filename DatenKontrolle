@@ -1,0 +1,29 @@
+package edu.fra.uas.Kontrolle;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import edu.fra.uas.Repos.UserDataRepository;
+import edu.fra.uas.model.userDaten;
+
+@Controller
+public class DatenKontrolle {
+	
+	@Autowired
+	 UserDataRepository repository;
+	
+	
+	@RequestMapping("/")
+	public String indexPage() {
+		return "index";
+		
+	}
+	@RequestMapping("/saveData")
+	@ResponseBody
+	public String saveData(userDaten userDaten) {
+		repository.save(userDaten);
+		return "Success";
+	}
+}
