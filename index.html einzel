@@ -16,17 +16,24 @@
     <h1>
         <img src="snake.jpg" width="60px"> SNAKE GAME <img src="snake.jpg" width="60px"> 
         
-        
+
     
     </h1> 
 </header>
+
+<form action="/saveData" method ="post">
+   <label> Geben Sie ihren Namen ein: </label>
+   <input type= "text" name="name">
+   <input type= "submit" value="save"> 
+
+</form>
 
 <div class="container">
   <button onclick = "start()">
         click here
 
     </button>
- <canvas id = "canvas" width ="480" height="480"></canvas>  
+ 
 </div>
 </div>
 </header>
