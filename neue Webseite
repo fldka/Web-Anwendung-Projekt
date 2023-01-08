@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="style.css">
+<header>
+
+    <h1>
+        <img src="snake1.jpg" width="60px"> SNAKE GAME <img src="snake1.jpg" width="60px"> 
+        
+    
+    </h1> 
+</header>
+
+<div class="container">
+    <a href="link.html"> Jetzt Spielen!
+
+    </a>
+</div>

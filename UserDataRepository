@@ -1,0 +1,10 @@
+package edu.fra.uas.Repos;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import edu.fra.uas.model.userDaten;
+
+public interface UserDataRepository extends JpaRepository<userDaten, Integer> {
+	
+
+}
